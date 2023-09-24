@@ -23,7 +23,7 @@ margin-bottom: 120px;
 }
 #logo {
 width: 400px;
-margin-left: -110px;
+margin-left: -70px;
 }
 ul {
 width: 570px;
@@ -56,21 +56,21 @@ text-decoration: none;
 padding: 6px 18px 5px 18px;
 }
 a:hover, a.on {
-color: #c33;
+color: black;
 background-color: #efefef;
 }
 #navigation {
-    animation: slideRight 2s ease forwards;
+    animation: zoom 2s ease forwards;
     opacity: 0;
     animation-delay: calc(.2s*var());
 }
-@keyframes slideRight{
+@keyframes zoom {
     0%{
-        transform: translateX(-100px);
+        transform: scale(0);
         opacity: 0;
     }
     100%{
-        transform: translateX(0);
+        transform: scale(1);
         opacity: 1;
     }
 }
