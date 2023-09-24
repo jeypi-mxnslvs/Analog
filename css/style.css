@@ -10,14 +10,14 @@ max-width: 940px;
 min-width: 720px;
 margin: 5px auto 5px auto;
 padding: 5px;
-background-color: black; /* Change background color to black */
+background-color: black;
 }
 #header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: black; /* Add background color */
-padding: 10px 20px; /* Adjust padding as needed */
+background-color: black;
+padding: 10px 20px;
 margin-top: -20px;
 margin-bottom: 120px;
 }
@@ -39,14 +39,14 @@ margin: 0px 3px;
 }
 p {
 text-align: center;
-width: 100%; /* Use full width */
-margin: 20px auto; /* Center horizontally */
+width: 100%;
+margin: 20px auto;
 font-weight: normal;
 color: white;
 }
 p img {
 max-width: 100%;
-height: auto; /* Maintain aspect ratio */
+height: auto;
 margin-bottom: 75px;
 }
 a {
@@ -60,9 +60,9 @@ color: #c33;
 background-color: #efefef;
 }
 #navigation {
-    animation: slideRight .7s ease forwards;
+    animation: slideRight 2s ease forwards;
     opacity: 0;
-    animation-delay: calc(.2s*var(--clr));
+    animation-delay: calc(.2s*var());
 }
 @keyframes slideRight{
     0%{
