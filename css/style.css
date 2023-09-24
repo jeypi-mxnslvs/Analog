@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+html, body {
+font-size: 90%;
+font-family: "poppins",sans-serif;
+letter-spacing: 0.15em;
+background-color: black;
+}
+#page {
+max-width: 940px;
+min-width: 720px;
+margin: 5px auto 5px auto;
+padding: 5px;
+background-color: black; /* Change background color to black */
+}
+#header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black; /* Add background color */
+padding: 10px 20px; /* Adjust padding as needed */
+margin-top: -20px;
+margin-bottom: 120px;
+}
+#logo {
+width: 400px;
+margin-left: -110px;
+}
+ul {
+width: 570px;
+padding: 15px;
+margin: 0px auto 0px auto;
+border-top: 2px solid #000;
+border-bottom: 1px solid #000;
+text-align: center;
+}
+li {
+display: inline;
+margin: 0px 3px;
+}
+p {
+text-align: center;
+width: 100%; /* Use full width */
+margin: 20px auto; /* Center horizontally */
+font-weight: normal;
+color: white;
+}
+p img {
+max-width: 100%;
+height: auto; /* Maintain aspect ratio */
+margin-bottom: 75px;
+}
+a {
+color: white;
+text-transform: uppercase;
+text-decoration: none;
+padding: 6px 18px 5px 18px;
+}
+a:hover, a.on {
+color: #c33;
+background-color: #efefef;
+}
+#navigation {
+    animation: slideRight .7s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s*var(--clr));
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
